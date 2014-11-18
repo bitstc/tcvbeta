@@ -1,0 +1,24 @@
+<ion-view title="Video">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <h2> capture video </h2>
+    <div class="card">
+        <div class="item item-divider">
+            Video
+        </div>
+        <div class="item item-image">
+            <!--<img class="item" ng-src="{{cameraimage}}" style="min-height: 350px;"/>-->
+            <video id="video" width="400" height="350" autoplay webkit-playsinline >
+              <source id="source" ng-src="{{videopath}}" type="video/mp4">  
+            </video>
+        </div>
+    </div>
+    <div class="padding">
+        <button class="button button-block button-positive" ng-click="recordVideo()">
+            Try Again
+        </button>
+    </div>
+  </ion-content>
+</ion-view>

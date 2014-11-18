@@ -24,3 +24,13 @@ proguard/
 
 # Log Files
 *.log
+
+nbproject/
+node_modules/
+platforms/
+plugins/
+test/
+www/
+hooks/
+.tmp/
+resources/

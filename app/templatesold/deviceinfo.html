@@ -1,0 +1,49 @@
+<ion-view title="Device Information">
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <h3>{{deviceAvailbility}} </h3>
+        <div class="list card">
+            <div class="item item-text-wrap">
+                <h2>Model</h2>
+                <p>{{model}}</p>
+            </div>
+            <div class="item item-text-wrap">
+                <h2>Platform</h2>
+                <p>{{platform}}</p>
+            </div>
+            <div class="item item-text-wrap">
+                <h2>Version</h2>
+                <p>{{version}}</p>
+            </div>
+            <div class="item item-text-wrap">
+                <h2>UUID</h2>
+                <p>{{uuid}}</p>
+            </div>            
+            <div class="item item-text-wrap">
+                <h2>Cordova Version</h2>
+                <p>{{cordova}}</p>
+            </div>
+            <div class="item item-text-wrap">
+                <h2>Camera</h2>
+                <p>{{camera}}</p>
+            </div>
+            <div class="item item-text-wrap">
+                <h2>Microphone</h2>
+                <p>{{microphone}}</p>
+            </div>
+            <div class="item item-text-wrap">
+                <h2>Connection Type</h2>
+                <p>{{connectionType}}</p>
+            </div>
+            <div class="item item-text-wrap">
+                <h2>Network Type</h2>
+                <p>{{networkType}}</p>
+            </div>
+        </div>
+        <button class="button button-block button-positive" ng-click="refreshNetwork()">
+            Refresh
+        </button>
+    </ion-content>
+</ion-view>

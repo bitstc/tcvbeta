@@ -1,0 +1,41 @@
+<ion-view title="Device Information">
+  <!--<ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>-->
+  <ion-content class="padding">
+    <!--<h2>{{deviceAvailbility}} </h2>-->
+    <div class="list">
+      <div class="item item-icon-left"> <span class="item-note">{{model}}</span>
+        <h2> <i class="icon ion-android-lightbulb"></i> Model</h2>        
+      </div>
+      <div class="item item-icon-left"> <span class="item-note">{{platform}}</span>
+        <h2><i class="icon ion-android-arrow-up-right"></i> Platform</h2>        
+      </div>
+      <div class="item item-icon-left"> <span class="item-note">{{version}}</span>
+        <h2><i class="icon ion-android-earth"></i> Version</h2>
+      </div>
+      <div class="item item-icon-left"> <span class="item-note">{{uuid}}</span>
+        <h2><i class="icon ion-android-send"></i> UUID</h2>
+      </div>
+      <div class="item item-icon-left"> <span class="item-note">{{cordova}}</span>
+        <h2><i class="icon ion-ios7-bookmarks"></i> Cordova Version</h2>
+      </div>
+      <div class="item item-icon-left"> <span class="item-note">{{camera}}</span>
+        <h2><i class="icon ion-android-camera"></i> Camera</h2>
+      </div>
+      <div class="item item-icon-left"> <span class="item-note">{{microphone}}</span>
+        <h2><i class="icon ion-headphone"></i> Microphone</h2>
+      </div>
+      <div class="item item-icon-left"> <span class="item-note">{{connectionType}}</span>
+        <h2><i class="icon ion-arrow-swap"></i> Connection Type</h2>
+      </div>
+      <div class="item item-icon-left"> <span class="item-note">{{networkType}}</span>
+        <h2><i class="icon ion-connection-bars"></i> Network Type</h2>        
+      </div>
+    </div>
+    <button class="button button-block button-outline button-calm icon icon-left ion-loop" ng-click="refreshNetwork()"> Refresh </button>
+    </ion-content>
+    <div class="bar bar-footer">
+      <div class="title">benchmarkitsolutions.com</div>
+    </div>
+</ion-view>
