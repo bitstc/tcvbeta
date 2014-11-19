@@ -7820,4 +7820,7 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
 .list .icon{color:#33bee5;}
 .bar-stable .button.button-clear {color: #fff;border: solid 1px #fff;padding: 0px 3px;}
 .button.button-calm {border-color: #1aacc3;background-color: #33bee5;color: #fff;}
-.card, .list-inset {margin: 45px 10px;}
+.dote{display: inline-block; padding:10px; background-color:#0b9444; border-radius:10px;}
+.notification-text{ padding:6px;display: inline-block;position:relative; top: -4px; color:#0b9444;width: 235px;}
+.inactive{color: #ed1c24;}
+/*.card, .list-inset {margin: 45px 10px;}*/

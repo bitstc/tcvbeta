@@ -1,25 +1,19 @@
 <ion-view title="Network Speed Test">
-  <ion-nav-buttons side="left">
-    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
-  </ion-nav-buttons>
   <ion-content class="has-header">
-    <h3>Test Network Speed</h3>
     <div class="padding">
-        
-        <button class="button button-block button-positive" ng-click="testSpeed()">
-            Speed Test
-        </button>
-        <!--<button class="button button-block button-positive" ng-click="uploadFile()">
-            Upload File
-        </button>
-        <button class="button button-block button-positive" ng-click="downloadFile()">
-            Download File
-        </button>
-        -->
-        <div id="status"></div>
-        Upload Speed <span id="showspeed" >{{showSpeed}}</span><br/>
-        Download Speed <span >{{downloadSpeed}}</span><br/>
+      <div id="status"></div>
+      <div class="list card">
+        <div class="item item-icon-left"> <i class="icon ion-ios7-cloud-download-outline"></i> Download Speed <span class="item-note" id="showspeed">{{downloadSpeed}}</span> </div>
+        <div class="item item-icon-left"> <i class="icon ion-ios7-cloud-upload-outline"></i> Upload Speed <span class="item-note" id="showspeed">{{showSpeed}}</span> </div>        
+      </div>
+      
+      <button class="button button-block button-outline button-calm icon icon-left ion-ios7-speedometer" ng-click="testSpeed()">Start Speed Test</button>
+
+        <div class="notification" ng-show="toggal" align="center" ><span class="notification-text {{inactiveNetworkClass}}" style="">{{checkNetworkEligibility}}</span></div>
 
     </div>
   </ion-content>
+  <div class="bar bar-footer">
+    <div class="title">benchmarkitsolutions.com</div>
+  </div>
 </ion-view>
